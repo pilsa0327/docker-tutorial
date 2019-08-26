@@ -19,7 +19,7 @@ docker images – 설치된 이미지 확인
 docker rmi [이미지 ID] / docker rmi $(docker images –qa) 설치된 단일/전체 이미지 삭제 
 
 #### 컨테이너 관리
-- docker run 이미지:태그 – 컨테이너 생성 및 실행
+- $docker run 이미지:태그 – 컨테이너 생성 및 실행
   ##### 옵션
    * -i –t : 표준 입력을 활성화 및 유지/TTY 모드 사용
  	          - Bash에 명령을 입력하기 위해 사용
@@ -28,10 +28,10 @@ docker rmi [이미지 ID] / docker rmi $(docker images –qa) 설치된 단일/�
    * -d : 백그라운드 실행
    * /bin/bash : Bash 셀에 연결
 
-- docker ps (-a) : 실행 중인(모든) 컨테이너 프로세스 확인 
-- docker rm NAMES(or 컨테이너 이름)/docker rm $(docker ps –qa) 해당/전체 컨테이너 삭제
-- docker start [컨테이너 이름] : 컨테이너 실행
-- docker stop [컨테이너 이름] : 컨테이너 중지
-- docker exec –i –t [컨테이너 이름][명령]: 실행 중인 컨테이너 접속 
-- docker attach [컨테이너이름][명령] : 실행 중인 컨테이너 접속
-- docker cp [host 파일경로] [컨테이너이름]:[컨테이너 내부 경로] 호스트->컨테이너 파일 복사(역으로 가능)
+- $docker ps (-a) : 실행 중인(모든) 컨테이너 프로세스 확인 
+- $docker rm NAMES(or 컨테이너 이름)/docker rm $(docker ps –qa) 해당/전체 컨테이너 삭제
+- $docker start [컨테이너 이름] : 컨테이너 실행
+- $docker stop [컨테이너 이름] : 컨테이너 중지
+- $docker exec –i –t [컨테이너 이름][명령]: 실행 중인 컨테이너 접속 
+- $docker attach [컨테이너이름][명령] : 실행 중인 컨테이너 접속
+- $docker cp [host 파일경로] [컨테이너이름]:[컨테이너 내부 경로] 호스트->컨테이너 파일 복사(역으로 가능)
