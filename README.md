@@ -1,5 +1,5 @@
 # docker 기본 학습
-##1. Docker란?
+## 1. Docker란?
 - 경량화된 가상머신 기술
 
 ## 2. VM vs Docker
